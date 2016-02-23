@@ -1,4 +1,4 @@
-var app = angular.module('myModule', []);
+var app = angular.module('myModule', ['ngRoute','ngMaterial','ui.bootstrap']);
 // This is declaring a module. More on this in a moment
 app.controller('theController', function(){
 	var vm = this;

@@ -14,32 +14,20 @@
 
 		<!-- search field -->
 
-		<!-- 
-  <div ng-controller="myController as main">
-    <ul>
-        <li ng-repeat="beatle in main.beatles">{{beatle}}</li>
-    </ul>
-    
-    <ul>
-      <li ng-repeat="fish in main.fishes">{{fish}}</li>
-    </ul>
-    
-    <h2>{{main.greeting}}</h2>
-    
-    <input type="text" ng-model="main.name"/>
-    
-    <button ng-click="main.spanishToEnglish(main.name)">Translate!</button>
-    
-		 -->
-		<div ng-controller="theController as vm">
+		<div ng-controller="theController as vm" layout="column" ng-cloak class="md-inline-form">
 		 	<input id="1" type="text" ng-model="vm.list" placeholder="enter list item"> <!-- original ng-model="list" -->
+<!-- 
+			 <md-content layout-padding> -->
+			 	
+		 			 <md-datepicker ng-model="vm.date" md-placeholder="Enter date">
+          			</md-datepicker>
+          		
+     <!--      	</md-content> -->
+		
 
 
-		 		
 
-
-
-		 	<input id="2" type="text" ng-model="vm.date" placeholder="enter due date"><!-- added input for date -->
+		 <!-- 	<input id="2" type="text" ng-model="vm.date" placeholder="enter due date"> <!added input for date --> 
 
   		  	<button ng-click="vm.displayInput()">click to add</button>
 
@@ -72,6 +60,8 @@
   	
 
 	<script src="lib/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"</script>
+	<script src="lib/ui-bootstrap-tpls-1.1.2.min.js"></script>
 	<script src="12.js"></script>
 	<script src="lib/jquery-1.12.0.min.js"></script>
 	

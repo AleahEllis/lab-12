@@ -1,0 +1,83 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	
+		<link rel="stylesheet" href="list.css"/>
+
+	</head>
+
+	<body ng-app="myModule">
+		<header>
+			<h1>A To-do List</h1>
+		</header>
+
+		<!-- search field -->
+
+		<!-- 
+  <div ng-controller="myController as main">
+    <ul>
+        <li ng-repeat="beatle in main.beatles">{{beatle}}</li>
+    </ul>
+    
+    <ul>
+      <li ng-repeat="fish in main.fishes">{{fish}}</li>
+    </ul>
+    
+    <h2>{{main.greeting}}</h2>
+    
+    <input type="text" ng-model="main.name"/>
+    
+    <button ng-click="main.spanishToEnglish(main.name)">Translate!</button>
+    
+		 -->
+		<div ng-controller="theController as vm">
+		 	<input id="1" type="text" ng-model="vm.list" placeholder="enter list item"> <!-- original ng-model="list" -->
+
+
+		 		
+
+
+
+		 	<input id="2" type="text" ng-model="vm.date" placeholder="enter due date"><!-- added input for date -->
+
+  		  	<button ng-click="vm.displayInput()">click to add</button>
+
+  		  	<p>Need help prioritizing? Lets see what is due tomorrow! Enter the date in question</p>
+  		  	<input type="text" ng-model="bySoonestDate" placeholder="00/00 format please!">
+
+		 	<ul>
+    			
+    			<li ng-repeat="task in vm.items | filter: bySoonestDate| orderBy: 'info'">{{ task.info }} : {{ task.date }}</li>
+  			</ul>
+
+  		
+ 		
+
+
+
+  			<!-- idea
+
+  			<ul>
+   				 <li ng-repeat="item in vm.items | filter: number | orderBy: 'date'">{{ item }} </li>
+  			</ul>
+ 			-->
+	
+			<!--  original, basic, works <li ng-repeat="item in vm.items">{{item}}</li> -->
+  		 
+
+  		</div>
+
+	  			
+  	
+
+	<script src="lib/angular.min.js"></script>
+	<script src="12.js"></script>
+	<script src="lib/jquery-1.12.0.min.js"></script>
+	
+
+	</body>
+
+
+
+</html>

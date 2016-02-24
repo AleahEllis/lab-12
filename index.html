@@ -13,12 +13,12 @@
 		<header>
 			<h1>A To-do List</h1>
 		</header>
-
+			<h4>Enter a "to-do" item in the box below</h4>
 		<div ng-controller="theController as vm">
-		 	<input id="1" type="text" ng-model="vm.list" placeholder="enter list item"> <!-- original ng-model="list" -->
+		 	<input id="1" type="text" ng-model="vm.list" placeholder="add to the list!"> <!-- original ng-model="list" -->
 
 		 	<md-content>	
-				<h4>Standard date-picker</h4>
+				<h4>Assign a Due Date</h4>
     			<md-datepicker ng-model="vm.date" md-placeholder="Enter date"></md-datepicker>
 			</md-content> <!-- calendar date picker thing -->
 
@@ -32,7 +32,7 @@
   		  	<button ng-click="vm.displayInput()">click to add</button>
 
   		  	<p>Need help prioritizing? Lets see what is due tomorrow! Enter the date in question</p>
-  		  	<input type="text" ng-model="bySoonestDate" placeholder="00/00 format please!">
+  		  	<input type="text" ng-model="bySoonestDate" placeholder="enter day month and/or year">
 
 		 	<ul>
     			

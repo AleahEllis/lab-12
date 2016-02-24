@@ -1,2 +1,27 @@
+body{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+@font-face {
+  font-family: 'Besom';
+  src: url("Besom.ttf");
+}
+@font-face {
+  font-family: 'Besom';
+  src: url("Besom.ttf");
+  font-weight: bold;
+}
+
+h1{
+	font-family: 'Besom';
+	font-size: 80px
+}
+h4{
+	font-family: 'Besom';
+	font-size: 40px
+}
+
 md-datepicker-button {
   width: 36px; }

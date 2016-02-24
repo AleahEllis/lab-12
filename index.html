@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css"> <!-- the Angular-Material css file BEFORE list.css and list.styl links -->
+
 	
 		<link rel="stylesheet" href="list.css"/>
 
@@ -12,17 +14,15 @@
 			<h1>A To-do List</h1>
 		</header>
 
-		<!-- search field -->
-
-		<div ng-controller="theController as vm" layout="column" ng-cloak class="md-inline-form">
+		<div ng-controller="theController as vm">
 		 	<input id="1" type="text" ng-model="vm.list" placeholder="enter list item"> <!-- original ng-model="list" -->
-<!-- 
-			 <md-content layout-padding> -->
-			 	
-		 			 <md-datepicker ng-model="vm.date" md-placeholder="Enter date">
-          			</md-datepicker>
-          		
-     <!--      	</md-content> -->
+
+		 	<md-content>	
+				<h4>Standard date-picker</h4>
+    			<md-datepicker ng-model="vm.date" md-placeholder="Enter date"></md-datepicker>
+			</md-content> <!-- calendar date picker thing -->
+
+
 		
 
 
@@ -56,17 +56,26 @@
 
   		</div>
 
-	  
-	<script src="lib/angular.min.js"></script>  			 
-  	
-	<script src="lib/jquery-1.12.0.min.js"></script>
-	<script src="lib/ui-bootstrap-tpls-1.1.2.min.js"></script>
-	
-	<script src="lib/ui-bootstrap-tpls-1.1.2.min.js"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
-	
+  		<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
 	<script src="12.js"></script>
+	<!-- These are your script tags. Keep all of this in the same order I have listed. -->
+
+	 <!--  
+	// <script src="lib/angular.min.js"></script>  			 
+  	
+	// <script src="lib/jquery-1.12.0.min.js"></script>
+	// <script src="lib/ui-bootstrap-tpls-1.1.2.min.js"></script>
+	
+	// <script src="lib/ui-bootstrap-tpls-1.1.2.min.js"></script>
+	
+	// <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+	
+	// <script src="12.js"></script> -->
 	
 	
 
